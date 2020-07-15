@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>
+
+            {% block title %} {% endblock %}    {#Con esta sentencia le estamos dicendo que al heredar la plantilla el título va a cambiar#}
+
+
+        </title>
+    </head>
+
+    <body>
+
+
+        <h1 style="background-color: goldenrod; color:white;text-align: center">HIP HOP</h1>
+        
+        {% include "plantilla5.html" %}
+
+        <h3>Cursos de programación, ofimática y diseño web</h3>
+
+        {#Después de esto irá la sona cambiante#}
+
+        {% block content %} 
+        
+        
+        
+        
+        {% endblock %}
+
+
+        <p style="background-color: teal;color: wheat;text-align: center;">Cursos gratuitos, gracias por su visita</p>
+
+
+    </body>
+</html>
+

@@ -1,0 +1,25 @@
+<html>
+    <body>
+
+    <p><strong>Bienvenido al Men&uacute;</strong></p>  <!El strong hace negritas>
+
+    <p> <!Recorrer una lista con un bucle for en una plantilla>
+        
+        <ul>
+        {% if temas %} {#Entrará al bucle for sólo si hay elementos #}
+            {% for i in temas  %}
+
+                <li>{{i|first|lower}}</li>
+
+            {% endfor %}
+        {% else %}
+            <p>No hay elementos que mostrar</p>
+        {% endif %}
+        </ul>    
+
+    </p>
+
+    </body>
+</html>
+
+

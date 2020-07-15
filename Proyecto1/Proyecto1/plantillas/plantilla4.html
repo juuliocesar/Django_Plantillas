@@ -1,0 +1,25 @@
+<html>
+    <body>
+
+
+        {% include "plantilla5.html" %}
+
+        <h1>
+            BIENVENIDO 
+        </h1>
+        <p>
+            Su nombre es {{nj2}} {{aj2}}
+        </p>
+
+        <p>
+            {% for i in numeros%}
+
+                <p>{{i}}</p>
+
+            {% endfor %}
+
+
+        </p>
+    </body>
+</html>
+

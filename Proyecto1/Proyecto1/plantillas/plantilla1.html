@@ -1,0 +1,41 @@
+<html>
+<body>
+<h1 style="color:brown">
+    Bienvenido :D a una vista desde Django
+<h2 style="color:goldenrod">
+    Elaborado por:
+    Julio Cesar B.B.
+</h2>
+<h3 style="color:blue">Estamos viendo nuestra primera plantilla</h3>
+
+    {# NO TEMAS DISEÑADOR IGNORA ESTA PARTE #}
+    {%comment%}
+    Este es un comentario de varias lineas
+
+    {% endcomment%}
+
+    {% if nombre_persona == 'Juan' %}
+    
+    <p>El curso lo imparte el profesor titular</p>
+
+    {% else %}
+    <p>El curso lo imparte el profesor suplente</p>
+
+
+    {% endif %}
+
+
+<p style="color: goldenrod;">El nombre del profesor es: {{nombre_persona.upper}} {{apellido_persona|upper}}</p>
+
+<p>El nombre del alumno es: {{nombre_alumno}}</p>
+<p style= "color: cornflowerblue;">El d&iacute;a de hoy es: {{momento_actual.day}} del mes {{momento_actual.month}} del agno {{momento_actual.year}}</p>
+<p>C&eacute;sar </p>
+<p style="color: goldenrod">El nombre del rapero (poeta) es: {{nombre_poeta}} {{apellido_poeta}}</p>
+</html>
+</body>
+</h1>
+
+
+
+
+
